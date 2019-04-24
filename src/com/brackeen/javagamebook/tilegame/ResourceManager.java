@@ -313,6 +313,11 @@ public class ResourceManager {
             if(hostSprite instanceof Boss)
             	((Boss)sprite).setHealth(10);
             
+            // Sets the health of the Praying Mantis
+            if(hostSprite instanceof PrayingMantis) {
+            	((PrayingMantis)sprite).setHealth(2);
+            }
+            
             // center the sprite
             sprite.setX(
                 TileMapRenderer.tilesToPixels(tileX) +
