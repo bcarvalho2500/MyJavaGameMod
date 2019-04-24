@@ -447,6 +447,12 @@ public class ResourceManager {
                 	if(s.getArchType(x).compareTo("slug")==0)
                 		enemyAnim[x][i]=createSlugAnim(
                 				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("radioCatepillar")==0)
+                		enemyAnim[x][i]=createCatepillarAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
+                				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
+                				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
         }
 
         // create creature sprites
@@ -491,6 +497,10 @@ public class ResourceManager {
             			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("slug")==0)
+                	enemySprites[x]=new Slug(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("radioCatepillar")==0)
                 	enemySprites[x]=new Slug(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
@@ -749,6 +759,27 @@ public class ResourceManager {
         Animation anim = new Animation();
         anim.addFrame(img1, 250);
         anim.addFrame(img2, 250);
+        return anim;
+    }
+    private Animation createCatepillarAnim(Image img1, Image img2, Image img3, Image img4, Image img5, Image img6, Image img7, Image img8, Image img9) {
+    	if(CodeReflection.isTracing() && TilegamePackageTracingEnabled.getTilegamePackageTracingEnabledInstance().isEnabled()) {
+        	if(CodeReflection.getAbstactionLevel()>=0)
+        	{//check to make sure it's this level of abstraction
+        		e.fillInStackTrace();		
+        		CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
+        								e.getStackTrace()[0].getMethodName());
+        	}
+    	}
+        Animation anim = new Animation();
+        anim.addFrame(img1, 250);
+        anim.addFrame(img2, 250);
+        anim.addFrame(img3, 250);
+        anim.addFrame(img4, 250);
+        anim.addFrame(img5, 250);
+        anim.addFrame(img6, 250);
+        anim.addFrame(img7, 250);
+        anim.addFrame(img8, 250);
+        anim.addFrame(img9, 250);
         return anim;
     }
     
