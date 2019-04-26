@@ -12,10 +12,10 @@
 # > denotes the name of the picture
 ####################################
 #Total Enemies/Helpers
-10
+11
 ####################################
 #Total Sprite Images (including player sprites)
-37
+38
 ####################################
 #Player
 >player1.png
@@ -94,3 +94,7 @@ radioCatepillar
 >radioCatepillar-6.png
 >radioCatepillar-7.png
 >radioCatepillar-8.png
+#####################################
+#k
+grasshopper
+>grasshopper2.png

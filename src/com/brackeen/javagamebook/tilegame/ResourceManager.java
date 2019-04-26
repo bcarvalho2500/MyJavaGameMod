@@ -453,6 +453,11 @@ public class ResourceManager {
                 				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
                 				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
                 				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("grasshopper")==0)
+                		enemyAnim[x][i]=createGrasshopperAnim(
+                				images[i][imageIndex++]);
+            	
         }
 
         // create creature sprites
@@ -501,7 +506,11 @@ public class ResourceManager {
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("radioCatepillar")==0)
-                	enemySprites[x]=new Slug(enemyAnim[x][0], enemyAnim[x][1],
+                	enemySprites[x]=new RadioactiveCatepillar(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("grasshopper")==0)
+                	enemySprites[x]=new GiantGrasshopper(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
     
@@ -759,6 +768,21 @@ public class ResourceManager {
         Animation anim = new Animation();
         anim.addFrame(img1, 250);
         anim.addFrame(img2, 250);
+        return anim;
+    }
+    
+    private Animation createGrasshopperAnim(Image img1) {
+    	if(CodeReflection.isTracing() && TilegamePackageTracingEnabled.getTilegamePackageTracingEnabledInstance().isEnabled()) {
+        	if(CodeReflection.getAbstactionLevel()>=0)
+        	{//check to make sure it's this level of abstraction
+        		e.fillInStackTrace();		
+        		CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
+        								e.getStackTrace()[0].getMethodName());
+        	}
+    	}
+        Animation anim = new Animation();
+        anim.addFrame(img1, 250);
+        
         return anim;
     }
     private Animation createCatepillarAnim(Image img1, Image img2, Image img3, Image img4, Image img5, Image img6, Image img7, Image img8, Image img9) {

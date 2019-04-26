@@ -21,7 +21,7 @@ public class PrayingMantis extends Creature {
 	}
 	
 	public float getMaxSpeed() 
-    {//Return the max speed of this Homing Fly
+    {//The praying mantis is going to be a stationary enemy
     	
     	//Code Tracing
     	if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
@@ -32,6 +32,6 @@ public class PrayingMantis extends Creature {
         								e.getStackTrace()[0].getMethodName());
         	}
     	}
-        return 0.8f * enemySpeedMultiplier;
+        return 0.0f;
     }
 }
