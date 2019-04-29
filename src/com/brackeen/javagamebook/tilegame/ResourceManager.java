@@ -785,8 +785,8 @@ public class ResourceManager {
         	}
     	}
         Animation anim = new Animation();
-        anim.addFrame(img1, 250);
-        anim.addFrame(img2, 250);
+        anim.addFrame(img1, 350);
+        anim.addFrame(img2, 350);
         return anim;
     }
     

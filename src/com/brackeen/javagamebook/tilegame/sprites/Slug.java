@@ -31,6 +31,6 @@ public Slug(Animation left, Animation right, Animation deadLeft, Animation deadR
         								e.getStackTrace()[0].getMethodName());
         	}
     	}
-        return 0.1f * enemySpeedMultiplier;
+        return 0.025f * enemySpeedMultiplier;
     }
 }
