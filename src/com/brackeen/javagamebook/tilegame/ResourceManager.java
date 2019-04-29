@@ -318,6 +318,10 @@ public class ResourceManager {
             	((PrayingMantis)sprite).setHealth(2);
             }
             
+            if(hostSprite instanceof Turtle) {
+            	((Turtle)sprite).setHealth(3);
+            }
+            
             // center the sprite
             sprite.setX(
                 TileMapRenderer.tilesToPixels(tileX) +
@@ -457,7 +461,14 @@ public class ResourceManager {
                 	if(s.getArchType(x).compareTo("grasshopper")==0)
                 		enemyAnim[x][i]=createGrasshopperAnim(
                 				images[i][imageIndex++]);
-            	
+            	else
+                	if(s.getArchType(x).compareTo("bee")==0)
+                		enemyAnim[x][i]=createFlyAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("turtle")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
         }
 
         // create creature sprites
@@ -511,6 +522,14 @@ public class ResourceManager {
             else
                 if(s.getArchType(x).compareTo("grasshopper")==0)
                 	enemySprites[x]=new GiantGrasshopper(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("bee")==0)
+                	enemySprites[x]=new Bee(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("turtle")==0)
+                	enemySprites[x]=new Turtle(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
     

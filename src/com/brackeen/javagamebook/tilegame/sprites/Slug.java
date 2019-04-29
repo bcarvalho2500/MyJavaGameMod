@@ -20,7 +20,7 @@ public Slug(Animation left, Animation right, Animation deadLeft, Animation deadR
 	}
 	
 	public float getMaxSpeed() 
-    {//Return the max speed of this slug
+    {//Return the max speed of this Homing Fly
     	
     	//Code Tracing
     	if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
