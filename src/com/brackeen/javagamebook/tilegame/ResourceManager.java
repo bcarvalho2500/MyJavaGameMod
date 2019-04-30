@@ -315,11 +315,15 @@ public class ResourceManager {
             
             // Sets the health of the Praying Mantis
             if(hostSprite instanceof PrayingMantis) {
-            	((PrayingMantis)sprite).setHealth(2);
+            	((PrayingMantis)sprite).setHealth(1);
             }
             
             if(hostSprite instanceof Turtle) {
             	((Turtle)sprite).setHealth(3);
+            }
+            
+            if(hostSprite instanceof Bee) {
+            	((Bee)sprite).setHealth(2);
             }
             
             // center the sprite
@@ -458,6 +462,13 @@ public class ResourceManager {
                 				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
                 				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
             	else
+                	if(s.getArchType(x).compareTo("prayingmantis")==0)
+                		enemyAnim[x][i]=createPrayingMantisAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
+                				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
+                				, images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]
+        						, images[i][imageIndex++]);
+            	else
                 	if(s.getArchType(x).compareTo("grasshopper")==0)
                 		enemyAnim[x][i]=createGrasshopperAnim(
                 				images[i][imageIndex++]);
@@ -530,6 +541,10 @@ public class ResourceManager {
             else
                 if(s.getArchType(x).compareTo("turtle")==0)
                 	enemySprites[x]=new Turtle(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("prayingmantis")==0)
+                	enemySprites[x]=new PrayingMantis(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
     
@@ -823,6 +838,29 @@ public class ResourceManager {
         anim.addFrame(img7, 250);
         anim.addFrame(img8, 250);
         anim.addFrame(img9, 250);
+        return anim;
+    }
+    
+    private Animation createPrayingMantisAnim(Image img1, Image img2, Image img3, Image img4, Image img5, Image img6, Image img7, Image img8, Image img9, Image img10) {
+    	if(CodeReflection.isTracing() && TilegamePackageTracingEnabled.getTilegamePackageTracingEnabledInstance().isEnabled()) {
+        	if(CodeReflection.getAbstactionLevel()>=0)
+        	{//check to make sure it's this level of abstraction
+        		e.fillInStackTrace();		
+        		CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
+        								e.getStackTrace()[0].getMethodName());
+        	}
+    	}
+        Animation anim = new Animation();
+        anim.addFrame(img1, 250);
+        anim.addFrame(img2, 250);
+        anim.addFrame(img3, 250);
+        anim.addFrame(img4, 250);
+        anim.addFrame(img5, 250);
+        anim.addFrame(img6, 250);
+        anim.addFrame(img7, 250);
+        anim.addFrame(img8, 250);
+        anim.addFrame(img9, 250);
+        anim.addFrame(img10, 250);
         return anim;
     }
     

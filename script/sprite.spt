@@ -12,10 +12,10 @@
 # > denotes the name of the picture
 ####################################
 #Total Enemies/Helpers
-13
+14
 ####################################
 #Total Sprite Images (including player sprites)
-43
+53
 ####################################
 #Player
 >player1.png
@@ -109,4 +109,17 @@ bee
 turtle
 >turtle1.png
 >turtle2.png
+######################################
+#n
+prayingmantis
+>prayingmantis-1.png
+>prayingmantis-2.png
+>prayingmantis-3.png
+>prayingmantis-4.png
+>prayingmantis-5.png
+>prayingmantis-6.png
+>prayingmantis-7.png
+>prayingmantis-8.png
+>prayingmantis-9.png
+>prayingmantis-10.png
 ######################################

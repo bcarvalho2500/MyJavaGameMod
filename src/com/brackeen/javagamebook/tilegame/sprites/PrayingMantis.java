@@ -32,6 +32,6 @@ public class PrayingMantis extends Creature {
         								e.getStackTrace()[0].getMethodName());
         	}
     	}
-        return 0.0f;
+        return 0.0f * enemySpeedMultiplier;
     }
 }
