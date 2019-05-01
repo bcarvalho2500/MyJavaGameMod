@@ -4,5 +4,5 @@ F
 D             I                                             E
 D      II        I                                          C
 D                     EBBBBBBF                              C
-D         pq         EGAAAAAAD                            * C
+D         r        EGAAAAAAD                            * C
 HBBBBBBBBBBBBBBBBBBBBGAAAAAAAHBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBG
