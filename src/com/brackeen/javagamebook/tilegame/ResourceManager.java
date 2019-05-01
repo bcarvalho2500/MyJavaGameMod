@@ -326,6 +326,14 @@ public class ResourceManager {
             	((Bee)sprite).setHealth(2);
             }
             
+            if(hostSprite instanceof HH) {
+            	((HH)sprite).setHealth(2);
+            }
+            
+            if(hostSprite instanceof Hollow) {
+            	((Hollow)sprite).setHealth(3);
+            }
+            
             // center the sprite
             sprite.setX(
                 TileMapRenderer.tilesToPixels(tileX) +
@@ -560,15 +568,15 @@ public class ResourceManager {
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("h")==0)
-                	enemySprites[x]=new RadioactiveCatepillar(enemyAnim[x][0], enemyAnim[x][1],
+                	enemySprites[x]=new H(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("hh")==0)
-                	enemySprites[x]=new RadioactiveCatepillar(enemyAnim[x][0], enemyAnim[x][1],
+                	enemySprites[x]=new HH(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("hollow")==0)
-                	enemySprites[x]=new RadioactiveCatepillar(enemyAnim[x][0], enemyAnim[x][1],
+                	enemySprites[x]=new Hollow(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
     

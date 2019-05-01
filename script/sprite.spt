@@ -127,16 +127,16 @@ prayingmantis
 #this is the star icon
 ######################################
 #p
-hh
->HH1.png
->HH2.png
->HH3.png
-######################################
-#q
 hollow
 >Hollow1.png
 >Hollow2.png
 >Hollow3.png
+######################################
+#q
+hh
+>HH1.png
+>HH2.png
+>HH3.png
 #######################################
 #r
 h
