@@ -605,15 +605,15 @@ public class ResourceManager {
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("chicken")==0)
-                	enemySprites[x]=new H(enemyAnim[x][0], enemyAnim[x][1],
+                	enemySprites[x]=new Fly(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("hen")==0)
-                	enemySprites[x]=new H(enemyAnim[x][0], enemyAnim[x][1],
+                	enemySprites[x]=new SinuousFly(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("egg")==0)
-                	enemySprites[x]=new H(enemyAnim[x][0], enemyAnim[x][1],
+                	enemySprites[x]=new PrayingMantis(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
             else
                 if(s.getArchType(x).compareTo("frog")==0)

@@ -2,7 +2,7 @@
 
 F
 D             I                                             E
-D      II        I     u  v                                 C
-D                     EBBBBBBF                    t         C
-D    p     o      w  EGAAAAAAD     r       s              * C
+D      II        I     u  v                 s               C
+D                     EBBBBBBF      r             t         C
+D    p     o      w  EGAAAAAAD               c            * C
 HBBBBBBBBBBBBBBBBBBBBGAAAAAAAHBBBBBBBBB  BBBBBBBBBBBBBBBBBBBG
