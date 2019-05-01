@@ -258,7 +258,7 @@ public class ResourceManager {
                 }
 
                 // check if the char represents a sprite
-                else if (ch == 'o') {
+                else if (ch == '&') {
                     addSprite(newMap, coinSprite, x, y);
                 }
                 else if (ch == '!') {
@@ -500,6 +500,31 @@ public class ResourceManager {
                 	if(s.getArchType(x).compareTo("hollow")==0)
                 		enemyAnim[x][i]=createMonkeyAnim(
                 				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("chicken")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("hen")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("egg")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("frog")==0)
+                		enemyAnim[x][i]=createMonkeyAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("headcrab")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("slime")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	
         }
 
         // create creature sprites
@@ -577,6 +602,30 @@ public class ResourceManager {
             else
                 if(s.getArchType(x).compareTo("hollow")==0)
                 	enemySprites[x]=new Hollow(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("chicken")==0)
+                	enemySprites[x]=new H(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("hen")==0)
+                	enemySprites[x]=new H(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("egg")==0)
+                	enemySprites[x]=new H(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("frog")==0)
+                	enemySprites[x]=new Frog(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("headcrab")==0)
+                	enemySprites[x]=new Headcrab(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("slime")==0)
+                	enemySprites[x]=new Slime(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
     

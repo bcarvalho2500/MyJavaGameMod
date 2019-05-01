@@ -1,10 +1,16 @@
 #Number of maps
-1
+4
 ########################
 #Maps themselves
-#1 >map10.txt
-#>background3.png
-#>music.mid
-1 >map11.txt
+1 >map10.txt
+>background3.png
+>music.mid
+2 >map11.txt
+>background3.png
+>music.mid
+3 >map12.txt
+>background3.png
+>music.mid
+4 >map20.txt
 >background3.png
 >music.mid
