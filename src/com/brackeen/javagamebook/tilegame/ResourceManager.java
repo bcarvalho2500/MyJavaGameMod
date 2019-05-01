@@ -480,6 +480,18 @@ public class ResourceManager {
                 	if(s.getArchType(x).compareTo("turtle")==0)
                 		enemyAnim[x][i]=createGrubAnim(
                 				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("h")==0)
+                		enemyAnim[x][i]=createMonkeyAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("hh")==0)
+                		enemyAnim[x][i]=createMonkeyAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("hollow")==0)
+                		enemyAnim[x][i]=createMonkeyAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
         }
 
         // create creature sprites
@@ -545,6 +557,18 @@ public class ResourceManager {
             else
                 if(s.getArchType(x).compareTo("prayingmantis")==0)
                 	enemySprites[x]=new PrayingMantis(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("h")==0)
+                	enemySprites[x]=new RadioactiveCatepillar(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("hh")==0)
+                	enemySprites[x]=new RadioactiveCatepillar(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("hollow")==0)
+                	enemySprites[x]=new RadioactiveCatepillar(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
     
