@@ -53,7 +53,7 @@ public class Headcrab extends Monkey{
         								e.getStackTrace()[0].getMethodName());
         	}
     	}
-		//See if its time for the monkey to jump
+		//See if its time for the crab to jump
 		//Because time comes in at intervals we have to make sure that
 		//we jump in whichever elapsedTime interval that the timer has gone off in.
 		if((totalElapsedTime % jumpInterval)-elapsedTime<0){

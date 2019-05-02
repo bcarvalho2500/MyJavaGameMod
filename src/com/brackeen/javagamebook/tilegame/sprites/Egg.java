@@ -11,7 +11,7 @@ public class Egg extends Creature{
 		
 	}
 	public float getMaxSpeed() 
-    {//Return the max speed of this Sinuous Fly
+    {//The egg is a stationary object
     	
     	//Code Tracing
     	if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {

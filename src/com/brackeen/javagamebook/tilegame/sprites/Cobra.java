@@ -4,7 +4,7 @@ import com.brackeen.javagamebook.graphics.Animation;
 import com.brackeen.javagamebook.codereflection.*;
 
 /**
- * A Grub is a Creature that moves slowly on the ground.
+ * A cobra is a Creature that moves slowly on the ground.
  */
 public class Cobra extends Creature {
 

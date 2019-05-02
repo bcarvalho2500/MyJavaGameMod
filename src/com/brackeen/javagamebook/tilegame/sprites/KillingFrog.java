@@ -4,7 +4,7 @@ import com.brackeen.javagamebook.graphics.Animation;
 import com.brackeen.javagamebook.codereflection.*;
 
 /**
-    A Grub is a Creature that moves slowly on the ground.
+    A killingfrog is a Creature that moves slowly on the ground.
 */
 public class KillingFrog extends Creature {
 
