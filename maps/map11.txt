@@ -3,6 +3,6 @@
 F
 D             I                                             E
 D      II        I     u  v                 s               C
-D                     EBBBBBBF      r             t         C
-D    p     o      w  EGAAAAAAD               c            * C
+D                     EBBBBBBF                    t         C
+D    p     o      w  EGAAAAAAD      r                     * C
 HBBBBBBBBBBBBBBBBBBBBGAAAAAAAHBBBBBBBBB  BBBBBBBBBBBBBBBBBBBG

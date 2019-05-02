@@ -1,5 +1,6 @@
 package com.brackeen.javagamebook.tilegame.sprites;
 
+import com.brackeen.javagamebook.codereflection.CodeReflection;
 import com.brackeen.javagamebook.graphics.Animation;
 
 public class Hen extends Fly{
@@ -13,5 +14,17 @@ public class Hen extends Fly{
 		
 	}
 	
+public boolean isFlying() {
+    	
+    	if(CodeReflection.isTracing() && SpritesPackageTracingEnabled.getSpritesPackageTracingEnabledInstance().isEnabled()) {
+        	if(CodeReflection.getAbstactionLevel()>=4)
+        	{//check to make sure it's this level of abstraction
+        		e.fillInStackTrace();		
+        		CodeReflection.registerMethod(e.getStackTrace()[0].getClassName(),
+        								e.getStackTrace()[0].getMethodName());
+        	}
+    	}
+        return isAlive() && super.isFlying();
+    }
 	
 }
