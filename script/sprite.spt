@@ -12,10 +12,10 @@
 # > denotes the name of the picture
 ####################################
 #Total Enemies/Helpers
-23
+29
 ####################################
 #Total Sprite Images (including player sprites)
-75
+88
 ####################################
 #Player
 >player1.png
@@ -184,8 +184,34 @@ slime
 >slime2.png
 #######################################
 #x
+bomb
+>blastingbomb1.png
+>blastingbomb2.png
+>blastingbomb3.png
 #######################################
 #y
+cobra
+>cobra1.png
+>cobra2.png
 #######################################
 #z
+dragon
+>dragon1.png
+>dragon2.png
+#######################################
+#{
+dragondog
+>dragondog1.png
+>dragondog2.png
+#######################################
+#|
+killingfrog
+>killingfrog.png
+>killingfrog1.png
+#######################################
+#}
+manshoot
+>manshoot1.png
+>manshoot2.png
+#######################################
 #######################################

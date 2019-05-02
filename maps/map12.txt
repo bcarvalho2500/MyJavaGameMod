@@ -1,10 +1,10 @@
 #This Map was generated using Map Creator v1.1
                                                                                                     
-                                       EBBBBBBB                                                             
-                    II                 CAAAAAAA                                                             
-BF                II  I                CAAAAAAA                                                             
-AD                                     CAAAAAAA                                                                
-AD   I^        EBBBBBBBBF   o          CAAAAAAA                                                                
-AD    II      EGIIIIIIIAD   I          CAAAAAAA                                                                
-AD          n      ^        I    d     CAAAAAAA                                                                
-AHBBBBBBBBBBBBBBIIIIIIIAAHB  BBBBBBBBBBGAAAAAAA                                                                
+                                                 EBBBBBBB                                                             
+                    II                           CAAAAAAA                                                             
+BF                II  I                          CAAAAAAA                                                             
+AD                                               CAAAAAAA                                                                
+AD   I^    z   EBBBBBBBBF   o        {           CAAAAAAA                                                                
+AD    II      EGIIIIIIIAD   I                    CAAAAAAA                                                                
+AD  x      y       ^        I         }     |  * CAAAAAAA                                                                
+AHBBBBBBBBBBBBBBIIIIIIIAAHB  BBBBBBBBBBBBBBBBBBBBGAAAAAAA                                                                

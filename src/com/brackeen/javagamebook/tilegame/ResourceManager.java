@@ -524,6 +524,30 @@ public class ResourceManager {
                 	if(s.getArchType(x).compareTo("slime")==0)
                 		enemyAnim[x][i]=createGrubAnim(
                 				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("bomb")==0)
+                		enemyAnim[x][i]=createMonkeyAnim(
+                				images[i][imageIndex++], images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("cobra")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("dragon")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("dragondog")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("killingfrog")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
+            	else
+                	if(s.getArchType(x).compareTo("manshoot")==0)
+                		enemyAnim[x][i]=createGrubAnim(
+                				images[i][imageIndex++], images[i][imageIndex++]);
             	
         }
 
@@ -626,6 +650,30 @@ public class ResourceManager {
             else
                 if(s.getArchType(x).compareTo("slime")==0)
                 	enemySprites[x]=new Slime(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("bomb")==0)
+                	enemySprites[x]=new Bomb(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("cobra")==0)
+                	enemySprites[x]=new Cobra(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("dragon")==0)
+                	enemySprites[x]=new Dragon(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("dragondog")==0)
+                	enemySprites[x]=new DragonFly(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("killingfrog")==0)
+                	enemySprites[x]=new KillingFrog(enemyAnim[x][0], enemyAnim[x][1],
+                			enemyAnim[x][2], enemyAnim[x][3]);
+            else
+                if(s.getArchType(x).compareTo("manshoot")==0)
+                	enemySprites[x]=new Man(enemyAnim[x][0], enemyAnim[x][1],
                 			enemyAnim[x][2], enemyAnim[x][3]);
     }
     
